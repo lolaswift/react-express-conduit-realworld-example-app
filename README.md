@@ -60,3 +60,10 @@ The following command will build the production version of the app:
 ```bash
 npm start
 ```
+
+### My notes
+On windows, postgress can be installed using docker like this repo https://github.com/remast/gobuff_realworld_example_app
+then In the [`backend`](backend/) directory, duplicate and remane the`.env.example` file, name it `.env`, and modify it to set all the required private development environment variables.
+Also need to modify the package.json of backend to:
+"dev": "set NODE_ENV=development& nodemon index.js",
+
